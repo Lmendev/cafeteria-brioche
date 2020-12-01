@@ -1,4 +1,4 @@
-# cafeteria-brioche
+# Cafetería Brioche
 Proyecto Ciclo 3 Cafetería Brioche Misión TIC 2022
 
 
