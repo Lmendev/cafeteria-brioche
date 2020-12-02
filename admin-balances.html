@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balances</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header style="background-image: url(img/coffee.jpg); background-size: cover; opacity: 0.9;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h3 class="text-left; text-white">Cafetería Brioche</h3>
+                </div>
+                <div class="col-6">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            <img src="img/user3.jpg" class="rounded float-right" alt="user-logo" height="40" width="40">
+                        </div>
+                        <div class="col-3; text-left; text-white">
+                            Username<br>Administrador
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <aside class="p-3 mb-2 bg-light text-dark">
+                    <div class="col-12; text-center">
+                        <h2>CONSULTA DE BALANCES</h2>
+                    </div>
+                    <form method="post">
+                        <div class="form-group"> <!-- Date input -->
+                            <label class="control-label" for="date">Desde</label>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        </div>
+                        <div class="form-group"> <!-- Date input -->
+                            <label class="control-label" for="date">Hasta</label>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        </div>
+                        <div>
+                            <label>Inventario</label>
+                            <select class="custom-select">
+                                <option selected disabled value="">Seleccione producto...</option>
+                                <option>Café</option>
+                                <option>Chocolate</option>
+                                <option>Té</option>
+                                <option>Mocca</option>
+                                <option>Capuccino</option>
+                            </select>
+                            <select class="custom-select">
+                                <option selected disabled value="">Seleccione producto...</option>
+                                <option>Café</option>
+                                <option>Chocolate</option>
+                                <option>Té</option>
+                                <option>Mocca</option>
+                                <option>Capuccino</option>
+                            </select>
+                            <select class="custom-select">
+                                <option selected disabled value="">Seleccione producto...</option>
+                                <option>Café</option>
+                                <option>Chocolate</option>
+                                <option>Té</option>
+                                <option>Mocca</option>
+                                <option>Capuccino</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-light">Restaurar</button>
+                        <button type="button" class="btn btn-success">Generar Balance</button>
+                        <div class="row align-items-center">
+                            <button type="button" class="btn btn-link"><img src="img/back.jpeg" alt="back" height="23" width="40"> Regresar</button>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+            <div class="col-md-8">
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img src="img/graph1.png" class="img-fluid"></div>
+                    <div class="col-md-6"><img src="img/graph2.png" class="img-fluid"></div>
+                </div>
+                <div class="row align-items-center">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad Vendida</th>
+                                <th>Total venta</th>
+                                <th>Utilidad Neta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Café</td>
+                                <td>45</td>
+                                <td>245000</td>
+                                <td>120000</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>24</td>
+                                <td>140000</td>
+                                <td>62000</td>
+                            </tr>
+                            <tr>
+                                <td>Té</td>
+                                <td>28</td>
+                                <td>130000</td>
+                                <td>45000</td>
+                            </tr>
+                            <tr>
+                                <td>Mocca</td>
+                                <td>32</td>
+                                <td>220000</td>
+                                <td>95000</td>
+                            </tr>
+                            <tr>
+                                <td>Capuccino</td>
+                                <td>40</td>
+                                <td>250000</td>
+                                <td>100000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="vendor/popperjs/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
